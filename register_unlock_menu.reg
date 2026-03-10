@@ -1,0 +1,25 @@
+Windows Registry Editor Version 5.00
+
+; 文件右键菜单
+[HKEY_CLASSES_ROOT\*\shell\CheckLock]
+@="检查并解除占用"
+"Icon"="taskmgr.exe,0"
+
+[HKEY_CLASSES_ROOT\*\shell\CheckLock\command]
+@="powershell.exe -NoProfile -ExecutionPolicy Bypass -File \"D:\\tools\\UnlockTool.ps1\" \"%1\""
+
+; 文件夹右键菜单
+[HKEY_CLASSES_ROOT\Directory\shell\CheckLock]
+@="检查并解除占用"
+"Icon"="taskmgr.exe,0"
+
+[HKEY_CLASSES_ROOT\Directory\shell\CheckLock\command]
+@="powershell.exe -NoProfile -ExecutionPolicy Bypass -File \"D:\\tools\\UnlockTool.ps1\" \"%1\""
+
+; 文件夹背景右键菜单
+[HKEY_CLASSES_ROOT\Directory\Background\shell\CheckLock]
+@="检查并解除占用"
+"Icon"="taskmgr.exe,0"
+
+[HKEY_CLASSES_ROOT\Directory\Background\shell\CheckLock\command]
+@="powershell.exe -NoProfile -ExecutionPolicy Bypass -File \"D:\\tools\\UnlockTool.ps1\" \"%V\""
