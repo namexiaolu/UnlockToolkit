@@ -6,7 +6,7 @@ Windows Registry Editor Version 5.00
 "Icon"="taskmgr.exe,0"
 
 [HKEY_CLASSES_ROOT\*\shell\CheckLock\command]
-@="powershell.exe -NoProfile -ExecutionPolicy Bypass -File \"D:\\tools\\UnlockTool.ps1\" \"%1\""
+@="powershell.exe -NoProfile -ExecutionPolicy Bypass -File \"D:\\tools\\UnlockToolkit\\UnlockTool.ps1\" \"%1\""
 
 ; ÎÄ¼þ¼ÐÓÒ¼ü²Ëµ¥
 [HKEY_CLASSES_ROOT\Directory\shell\CheckLock]
@@ -14,7 +14,7 @@ Windows Registry Editor Version 5.00
 "Icon"="taskmgr.exe,0"
 
 [HKEY_CLASSES_ROOT\Directory\shell\CheckLock\command]
-@="powershell.exe -NoProfile -ExecutionPolicy Bypass -File \"D:\\tools\\UnlockTool.ps1\" \"%1\""
+@="powershell.exe -NoProfile -ExecutionPolicy Bypass -File \"D:\\tools\\UnlockToolkit\\UnlockTool.ps1\" \"%1\""
 
 ; ÎÄ¼þ¼Ð±³¾°ÓÒ¼ü²Ëµ¥
 [HKEY_CLASSES_ROOT\Directory\Background\shell\CheckLock]
@@ -22,4 +22,4 @@ Windows Registry Editor Version 5.00
 "Icon"="taskmgr.exe,0"
 
 [HKEY_CLASSES_ROOT\Directory\Background\shell\CheckLock\command]
-@="powershell.exe -NoProfile -ExecutionPolicy Bypass -File \"D:\\tools\\UnlockTool.ps1\" \"%V\""
+@="powershell.exe -NoProfile -ExecutionPolicy Bypass -File \"D:\\tools\\UnlockToolkit\\UnlockTool.ps1\" \"%V\""
