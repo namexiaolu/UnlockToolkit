@@ -21,24 +21,14 @@ Windows 右键菜单工具，用于快速检测并解除文件或文件夹的进
 
 **重要：** 默认脚本路径为 `D:\tools\UnlockTool.ps1`，如果你的文件存放在其他位置，需要先修改路径配置：
 
-1. **修改 .reg 文件**：用文本编辑器打开 `register_unlock_menu.reg`，将所有 `D:\\tools\\UnlockTool.ps1` 替换为你的实际路径（注意使用双反斜杠 `\\`）
+用文本编辑器打开 `register_unlock_menu.reg`，将所有 `D:\\tools\\UnlockTool.ps1` 替换为你的实际路径（注意使用双反斜杠 `\\`）
 
-2. **修改 PowerShell 脚本**：打开 `registerUnlockTool.ps1`，修改第2行的 `$ScriptPath` 变量为你的实际路径
-
-### 方法1：使用 .reg 文件（推荐）
+### 安装步骤
 
 1. 双击 `register_unlock_menu.reg`
 2. 点击"是"确认导入注册表
 
 **注册表写入内容：** 在 `HKEY_CLASSES_ROOT` 下创建右键菜单项，包含菜单显示文本、图标和执行命令（调用 PowerShell 运行 UnlockTool.ps1）
-
-### 方法2：使用 PowerShell 脚本
-
-以管理员身份运行 PowerShell：
-
-```powershell
-.\registerUnlockTool.ps1
-```
 
 ## 使用方法
 
@@ -55,7 +45,6 @@ Windows 右键菜单工具，用于快速检测并解除文件或文件夹的进
 ## 文件说明
 
 - `UnlockTool.ps1` - 主程序脚本
-- `registerUnlockTool.ps1` - 注册表注册脚本
 - `register_unlock_menu.reg` - 注册表文件（快速安装）
 - `kill_process_by_friendly_name.ps1` - 独立的进程终止工具
 
